@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="site-header__container container">
+      <a class="site-logo" href="index.html">
+        <h1 class="site-logo__text">Movies</h1>
+      </a>
+      <form class="site-header__form filter-form" id="filter-form" action="#" method="get">
+        <select class="filter-form__select" id="gender-filter" name="gender">
+          <option value="" disabled selected>filter by gender</option>
+          <option value="All">All</option>
+        </select>
+        
+        <button class="filter-form__btn" type="submit">GO</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="movies">
+      <div class="container">
+        <h2 class="movies__title">Movies list</h2>
+        <ul class="movies__list" id="movies-list">
+          <li class="movies__item movie-card" id="">
+            <img class="movie-card__poster" src="https://picsum.photos/300/350" alt="Movie name" width="300" height="350">
+            <div class="movie-card__content">
+              <h3 class="movie-card__title">
+                <a class="movie-card__link" href="#">Movie name</a>
+              </h3>
+              <p class="movie-card__overview">A boy is given the ability to become an adult superhero in times of need with a single magic word.</p>
+              <ul class="movie-card__genres">
+                <li class="movie-card__genre badge">Adventure</li>
+                <li class="movie-card__genre badge">Fantasy</li>
+                <li class="movie-card__genre badge">Family</li>
+              </ul>
+              <time class="movie-card__release-date">1508893200</time>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/films.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

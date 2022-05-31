@@ -1,0 +1,36 @@
+.filter-form {
+  display: flex;
+}
+
+.filter-form__select {
+  margin-right: 16px;
+  padding: 10px 15px;
+  font-size: 18px;
+  color: #ccc;
+  background-color: #111;
+  box-shadow: 0 1px 6px #cccccc1c;
+  border: none;
+  border-radius: 5px;
+}
+
+.filter-form__btn {
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ccc;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@include breakpoint-down(445px) {
+  .filter-form {
+    flex-direction: column;
+  }
+
+  .filter-form__select {
+    margin-right: 0;
+
+    margin-bottom: 10px;
+  }
+}

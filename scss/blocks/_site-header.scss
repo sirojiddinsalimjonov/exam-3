@@ -1,0 +1,23 @@
+.site-header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #222;
+  box-shadow: 0 1px 6px #cccccc1c;
+}
+
+.site-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@include breakpoint-down(445px) {
+  .site-header__container {
+    flex-direction: column;
+  }
+}
